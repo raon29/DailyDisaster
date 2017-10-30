@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:text = "cover on"
+            android:background="@drawable/basicbutton"
+            android:textColor="#ffffff"
+            android:id="@+id/coveron"
+            android:onClick="cover_click"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text = "cover off"
+           android:background="@drawable/blackbutton"
+            android:textColor="#ffffff"
+            android:id="@+id/coveroff"
+            android:onClick="cover_click"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,125 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/when"
+            android:text="날짜/시간"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:background="@drawable/back"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/weather"
+            android:text="날씨"
+            android:gravity="center"
+            android:background="@drawable/back"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/warning"
+            android:text="유의사항"
+            android:textColor="#000000"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:text = "일정등록"
+            android:background="@drawable/blackbutton"
+            android:textColor="#ffffff"
+            android:id="@+id/goAddSchedule"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text = "기본일정"
+            android:background="@drawable/basicbutton"
+            android:textColor="#ffffff"
+            android:id="@+id/goWeek" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:text = "일정확인"
+            android:background="@drawable/basicbutton"
+            android:textColor="#ffffff"
+            android:id="@+id/goCheck" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text = "PW설정"
+            android:background="@drawable/blackbutton"
+            android:textColor="#ffffff"
+            android:onClick="setPassword" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text = "cover"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/blackbutton"
+            android:textColor="#ffffff"
+            android:onClick="Setcover" />
+
+    <Button
+        android:onClick="Predice"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:text="오늘의 운세"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/basicbutton"/>
+        </LinearLayout>
+</LinearLayout>

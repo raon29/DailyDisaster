@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="com.dailydisaster.Check"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#000000">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Data/time         name"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+        <Button
+            android:onClick="RemoveTable"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:text="-"
+            android:textSize="5dp"/>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/dbList"
+        android:layout_width="match_parent"
+        android:layout_height="378dp">
+    </ListView>
+    <Button
+        android:onClick="Back"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/basicbutton"
+        android:text="뒤로"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"/>
+
+</LinearLayout>
